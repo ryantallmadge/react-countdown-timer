@@ -126,7 +126,7 @@ var CountdownTimer = React.createClass({
     var timeRemaining = this.state.timeRemaining;
 
     return (
-      <div className='timer'>
+      <div className={this.props.setClass || 'timer'}>
         {this.getFormattedTime(timeRemaining)}
       </div>
     );
