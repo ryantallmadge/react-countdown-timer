@@ -8,8 +8,8 @@ A timer component for React that counts down to zero for a specified number of m
  `initialTimeRemaining: Number`
  The time remaining for the countdown (in ms).
 
-`setClass: String (optional -- default: 'timer')`
-Override the 'timer' class with a custom class name
+ `className: String`
+  Custom class name to be applied to the timer
 
  `interval: Number (optional -- default: 1000ms)`
  The time between timer ticks (in ms).

@@ -7,6 +7,8 @@ var React = require('react');
 // props:
 //   - initialTimeRemaining: Number
 //       The time remaining for the countdown (in ms).
+//   - className: String
+//       Custom class name to be applied to the timer
 //
 //   - interval: Number (optional -- default: 1000ms)
 //       The time between timer ticks (in ms).
@@ -126,7 +128,7 @@ var CountdownTimer = React.createClass({
     var timeRemaining = this.state.timeRemaining;
 
     return (
-      <div className={this.props.setClass || 'timer'}>
+      <div className={this.props.className}>
         {this.getFormattedTime(timeRemaining)}
       </div>
     );
